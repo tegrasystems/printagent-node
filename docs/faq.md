@@ -48,7 +48,9 @@ No. The node starts in `Standalone` mode and prints locally. Linking to the clou
 
 ## What does the cloud add?
 
-Central management of printers and print jobs, printing from the PrintAgent app, and e-mail support. Pricing is on [printagent.app/pricing](https://printagent.app/pricing). The local designer and print API are available in both editions.
+Central templates, images and products; users, roles and permissions; central history, auditing and statistics; printer monitoring; centrally configured automation; AI assistance; e-mail support and one year of document and history retention. You can print from the PrintAgent web app to any linked node, and a linked node keeps printing locally when the cloud is unreachable.
+
+The local designer and print API are available in both editions. See [The paid cloud edition](../README.md#the-paid-cloud-edition) for the full overview and [printagent.app/pricing](https://printagent.app/pricing) for the current rates.
 
 ## How do I update?
 

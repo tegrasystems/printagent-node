@@ -4,7 +4,9 @@ Print labels from your own Windows PC or server, without a cloud account. PrintA
 
 **Free. No account, no printer limit, no print limit, no subscription.** The Community Edition is free to use but not open source — see [LICENSE.md](LICENSE.md).
 
-[Download](https://printagent.app/download) · [Installation](docs/installation.md) · [FAQ](docs/faq.md) · [Discussions](https://github.com/tegrasystems/printagent-node/discussions) · [Report a bug](https://github.com/tegrasystems/printagent-node/issues/new?template=bug_report.yml)
+Running labels across several locations or teams? The [paid cloud edition](#the-paid-cloud-edition) adds central management, users and roles, central history and support.
+
+[Download](https://printagent.app/download) · [Installation](docs/installation.md) · [FAQ](docs/faq.md) · [Discussions](https://github.com/tegrasystems/printagent-node/discussions) · [Report a bug](https://github.com/tegrasystems/printagent-node/issues/new?template=bug_report.yml) · [Cloud edition](https://printagent.app/pricing)
 
 ## What it does
 
@@ -60,15 +62,40 @@ PrintAgent Node is de gratis lokale versie van PrintAgent: een Windows-service m
 
 Community support is best effort; there is no SLA. See [SUPPORT.md](SUPPORT.md).
 
-## Community Edition and the cloud
+## The paid cloud edition
+
+The Community Edition is complete for a single workplace. The cloud edition is for teams that print across several locations, people and systems — and it is what keeps the free edition free.
+
+### What the cloud adds
+
+- **One template for every location.** Manage templates, the image library and the product catalog centrally; publish a change once and every linked node uses it.
+- **Users, roles and permissions.** Give colleagues access to exactly what they need, with unlimited PCs and users.
+- **Print and monitor from anywhere.** Send print jobs from the web app to any linked node, and see printer status and print history per location.
+- **Central history, auditing, statistics and AI assistance.** Every print in one overview, with previews, search and usage reporting — plus AI help when designing labels.
+- **Automation at scale.** Configure actions once — file drops, scanner input, HTTP calls or a weighing scale — and sync them to every node.
+- **A documented cloud API.** API keys and REST endpoints for your ERP, WMS or other systems.
+- **Support and retention.** E-mail support and one year of document and history retention.
+- **No lock-in.** If the cloud is unreachable, a linked node keeps printing locally and uploads its history when the connection returns.
+
+### Pricing
+
+One plan: a monthly base fee plus a per-printer rate that falls as your fleet grows, billed yearly in advance. Printing and users are unlimited; you only pay for the printers in your account, and with no printers there is no charge. See [printagent.app/pricing](https://printagent.app/pricing) for the current rates and the free trial.
+
+### Community Edition and the cloud
 
 | | Community Edition | PrintAgent cloud |
 |---|---|---|
-| Price | Free | Per printer, see [pricing](https://printagent.app/pricing) |
+| Price | Free | Base fee + per-printer rate, billed yearly |
 | Account | Not required | Required |
 | Printers and prints | Unlimited | Unlimited |
-| Label designer and print API | Yes, local | Yes, plus central management |
+| Users and PCs | Local, no user accounts | Unlimited users and PCs, with roles |
+| Label designer | Local | Local, plus central templates, images and products |
+| Print API | Local REST API with API keys | Local and cloud API |
+| History | Local | Central history, auditing and statistics |
+| Printer monitoring | Local | Central dashboard |
+| AI assistance | — | Yes |
 | Data | On your machine | In the cloud |
+| Retention | Your own disk | 1 year of document and history |
 | Support | Community, best effort | E-mail support |
 | Internet | Only for updates and optional linking | Required |
 
