@@ -1,0 +1,39 @@
+title: "[Q&A] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask a question about installing, configuring or using PrintAgent Node.
+
+        - Read the [installation guide](https://github.com/tegrasystems/printagent-node/blob/main/docs/installation.md), [troubleshooting guide](https://github.com/tegrasystems/printagent-node/blob/main/docs/troubleshooting.md) and [FAQ](https://github.com/tegrasystems/printagent-node/blob/main/docs/faq.md) first.
+        - Search existing discussions.
+        - Remove tokens, passwords and company data from logs.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What are you trying to do, and where are you stuck?
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: PrintAgent Node version
+      description: Shown in the tray menu and in node-status.json.
+      placeholder: "1.5.13"
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      description: Commands, settings or workarounds you already tested.
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log excerpt
+      description: From %ProgramData%\Tegra Systems BV\PrintAgent\Logs, around the time of the problem.
+      render: text

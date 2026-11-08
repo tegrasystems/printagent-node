@@ -1,0 +1,113 @@
+name: Bug report
+description: Report a reproducible bug in PrintAgent Node
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Before you continue:
+
+        - Read the [troubleshooting guide](https://github.com/tegrasystems/printagent-node/blob/main/docs/troubleshooting.md).
+        - Search existing issues and discussions.
+        - Remove tokens, passwords, company names and customer data from logs and screenshots.
+
+        Questions and feature ideas belong in [Discussions](https://github.com/tegrasystems/printagent-node/discussions), not in Issues.
+
+  - type: input
+    id: version
+    attributes:
+      label: PrintAgent Node version
+      description: Shown in the tray menu and in node-status.json.
+      placeholder: "1.5.13"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Windows version
+      options:
+        - Windows 11
+        - Windows 10
+        - Windows Server 2022
+        - Windows Server 2019
+        - Other (mention below)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Node mode
+      description: Shown on the Overview page.
+      options:
+        - Standalone (no cloud account)
+        - Linked to the PrintAgent cloud
+        - LinkedOffline (linked, but cannot reach the cloud)
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: printer
+    attributes:
+      label: Printer make, model and connection
+      description: Include dpi and connection type.
+      placeholder: "Zebra ZD421, 300 dpi, network 192.168.1.50:9100"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem and its impact.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The smallest sequence that shows the problem.
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. See ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log excerpt
+      description: From %ProgramData%\Tegra Systems BV\PrintAgent\Logs. Remove tokens and company data.
+      render: text
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or template
+      description: Drag images here, or paste the relevant part of the template JSON.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and discussions.
+          required: true
+        - label: I reproduced this on the latest version.
+          required: true
+        - label: I removed tokens, passwords and company data from logs and screenshots.
+          required: true
+        - label: This is not a security vulnerability (those go through SECURITY.md).
+          required: true

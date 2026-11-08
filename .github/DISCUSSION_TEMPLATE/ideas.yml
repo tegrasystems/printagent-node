@@ -1,0 +1,41 @@
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share an idea for PrintAgent Node. Explain the problem first; a clear problem is more useful than a detailed solution.
+
+        Please do not post customer data, tokens or other sensitive information.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the situation and why the current behavior is not enough.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should the node do? Add examples or a sketch if that helps.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Workarounds or other ways to solve the same problem.
+
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Who would benefit?
+      options:
+        - Standalone users
+        - Cloud users
+        - Both
+        - Not sure

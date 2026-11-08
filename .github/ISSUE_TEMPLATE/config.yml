@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or how-to
+    url: https://github.com/tegrasystems/printagent-node/discussions/categories/q-a
+    about: Ask a question in Discussions. Issues are for reproducible bugs only.
+  - name: Feature idea
+    url: https://github.com/tegrasystems/printagent-node/discussions/categories/ideas
+    about: Share an idea and let others vote on it.
+  - name: Installation guide
+    url: https://github.com/tegrasystems/printagent-node/blob/main/docs/installation.md
+    about: Read the installation and first-print guide.
+  - name: Security vulnerability
+    url: https://github.com/tegrasystems/printagent-node/security/policy
+    about: Report security issues privately, never in a public issue.
+  - name: Cloud subscription support
+    url: mailto:info@tegrasystems.nl
+    about: For account, subscription and billing questions about the cloud edition.
